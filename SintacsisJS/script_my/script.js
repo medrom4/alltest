@@ -1,9 +1,10 @@
 (function() {
-    var persone = {
-        name: "Alex",
-        surname: "Romanovich",
-        age: 31
-    };
+    var one = 3;
 
-    console.log(persone.name);
+    if (one < 10) {
+        console.log("меньше 10");
+    }
+    else {
+        console.log("больше 10");
+    }
 })();
