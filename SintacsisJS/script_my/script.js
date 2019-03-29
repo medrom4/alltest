@@ -1,9 +1,9 @@
 (function() {
-    var name = "Alex";
+    var name = "Alex"; // var - глобально
 
-    let surname = "Romanovich";
+    let surname = "Romanovich"; // let - локально
 
-    const sex = "Male";
+    const sex = "MALE"; // Большими буквами константы, не меняются
     
     console.log("Имя: " + name + "\n" + "Фамилия: " + surname + "\n" + "Пол: " + sex);
 })();
