@@ -1,10 +1,12 @@
 (function() {
-    var one = 3;
+    var person = {
+        name: "Alex",
+        surname: "Rom4",
+        fullName: function(a) {
+            return this.name + ' ' + this.surname + ' ' + a;
+        }
+    }
 
-    if (one < 10) {
-        console.log("меньше 10");
-    }
-    else {
-        console.log("больше 10");
-    }
+    console.log(person.fullName("programmer"));
+
 })();
