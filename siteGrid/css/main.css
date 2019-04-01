@@ -153,7 +153,7 @@ table {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(552px, max-content) auto minmax(16px, max-content) minmax(759px, max-content);
+    grid-template-rows: minmax(552px, max-content) auto minmax(16px, max-content) minmax(759px, max-content) auto;
     grid-row-gap: 35px;
 }
 
@@ -381,8 +381,8 @@ h1 {
     align-items: center;
 }
 
-.title .separator{
-     display: block;
+.title .separator {
+    display: block;
     height: 2px;
     background: url(/img/sepa.png) repeat-x;
 }
@@ -410,6 +410,68 @@ h1 {
     grid-gap: 20px;
 }
 
+.gallery .item {
+    position: relative;
+}
+
+.gallery .item:nth-child(1) .content_box {
+    right: 0;
+    bottom: 50px;
+    max-width: 235px;
+    padding-right: 50px;
+}
+
+.gallery .item:nth-child(2) .content_box {
+    right: 0;
+    bottom: 0px;
+    max-width: 235px;
+    padding-right: 50px;
+}
+
+.gallery .item:nth-child(3) .container,
+.gallery .item:nth-child(4) .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .item .content_box {
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+}
+
+.gallery .item .content_box h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1px;
+    text-transform: uppercase;
+}
+
+.gallery .item .content_box span {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.gallery .item .content_box p {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    line-height: 18px;
+    font-size: 12px;
+}
+
 .gallery .grid-item:first-child {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -418,4 +480,83 @@ h1 {
 .gallery .grid-item:nth-child(2) {
     grid-column-start: 2;
     grid-column-end: 4;
+}
+
+/**********************************************************
+**********************FOOTER******************************
+**********************************************************/
+
+
+.wrapper footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    line-height: 51px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper footer p:first-child {
+    text-align: left;
+    background: url(/img/sepa.png) repeat-x top;
+    color: inherit;
+    font-size: inherit;
+}
+
+.wrapper footer p:last-child {
+    text-align: right;
+    background: url(/img/sepa.png) repeat-x top;
+    color: inherit;
+    font-size: inherit;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .wrapper .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        text-align: center;
+    }
+
+    .wrapper .header nav {
+        text-align: left;
+    }
+
+    .wrapper .header .image_box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper .stats {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .wrapper .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 370px);
+    }
+
+    .wrapper .gallery .grid-item:first-child {
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+
+    .wrapper .gallery .grid-item:nth-child(2) {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .wrapper footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        text-align: center;
+    }
+
+    .wrapper footer p {
+        text-align: center !important;
+    }
 }
