@@ -1,30 +1,13 @@
-.flex {
-	display: flex;
-	height: 400px;
-	flex-direction: row;
-	/* расположение слева, справа, очередность */
-	flex-wrap: wrap;
-	/* переход на новую строку, если не вмещается блок по ширене */
-	/* flex-flow:  совмещает два предыдущих свойства без нкаков препинания*/
-	/* flex-grow: - пропорции наших ячеек */
-	/*	justify-content: center;*/
-	/* расположение на экране */
-	align-items: center;
-	/* расположение контейнера оп второй оси (вертикальной) */
+body {
+	margin: 0;
+	padding: 0;
+	height: 3000px;
 }
 
-.item {
-	padding: 10px;
-	border: 1px solid #333;
-	border-radius: 10px;
-	width: 100px;
-	order: 0;
-}
-
-.item:nth-child(2) {
-	align-self: flex-end;
-}
-
-.item:nth-child(3) {
-	order: -1;
+section {
+	position: relative;
+	width: 100%;
+	height: 2000px;
+	background: url(../img/animals.jpg);
+	background-attachment: fixed;
 }
