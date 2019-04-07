@@ -3,11 +3,45 @@ body {
 	padding: 0;
 }
 
-.container {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	background: url(../img/stars.jpg);
-	background-attachment: fixed;
-	
+/**************************
+***многоколоночность ******
+***************************/
+
+.temp {
+	/*column-count: 3;*/
+	column-width: 400px;
 }
+
+/**************************
+***картинка одна на одной**
+**************************/
+
+.one {
+	width: 300px;
+	height: 300px;
+	background-image: url(../img/bulbasaur.png), url(../img/640x577.png);
+	background-color: yellow;
+}
+
+/**************************
+**transition, transform****
+**************************/
+
+.transit {
+	width: 128px;
+	height: 128px;
+	background-image: url(../img/bulbasaur.png);
+	background-color: yellow;
+	transition: all ease 0.6s;
+}
+
+.transit:hover {
+	border-radius: 100%;
+	transform: rotate(100deg) scale(-1, 1);;
+}
+
+
+
+/**************************
+*********transform********
+**************************/
