@@ -37,11 +37,48 @@ body {
 
 .transit:hover {
 	border-radius: 100%;
-	transform: rotate(100deg) scale(-1, 1);;
+	transform: rotate(100deg) scale(-1, 1);
+	;
+}
+
+/**************************
+*********меню**************
+**************************/
+
+.my-meny ul {
+	padding-left: 0;
+	margin-top: 30px;
+}
+
+.my-meny ul li{
+	list-style-type: none;
+	line-height: 170%;
+	padding: 5px 0 5px 30px;
+	transition: all ease 0.6s;
+}
+
+.my-meny ul li:hover{
+	background-color: #c0c0c0;
+}
+
+.my-meny {
+	width: 200px;
+	height: 100%;
+	position: fixed;
+	left: -180px;
+	top: 0;
+	background-color: #f2f2f2;
+	background-image: url(../img/md_5aa0fdd386c8a.png);
+	background-size: 16px;
+	background-position: 182px 5px;
+	box-shadow: 4px 0 5px #c0c0c0;
+	background-repeat: no-repeat;
+	transition: all ease 1s;
+	cursor: pointer;
+}
+
+.my-meny:hover {
+	left: 0;
 }
 
 
-
-/**************************
-*********transform********
-**************************/
