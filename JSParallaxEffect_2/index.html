@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ParallaX</title>
     <link rel="stylesheet" href="css/main.css">
-
-    <script src="script_my/parallax.js" type="text/javascript"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
 </head>
 
 <body>
 
-
+    <div class="scene" id="scene">
+		<div class="item" data-depth="1.4"><img src="img/2.png" alt="" /></div>
+		<div class="item" data-depth="1"><img src="img/3.png" alt="" /></div>
+		<div class="item" data-depth="5.8"><img src="img/4.png" alt="" /></div>
+		<div class="item" data-depth="0.6"><img src="img/5.png" alt="" /></div>
+		<div class="item" data-depth="1.2"><img src="img/6.png" alt="" /></div>
+		<div class="item" data-depth="3.6"><img src="img/7.png" alt="" /></div>
+	</div>
 
     <script>
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
-    </script>
-</body>
-
-</html>
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene);
+	</script>
+</body></html>
