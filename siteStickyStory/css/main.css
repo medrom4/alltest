@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.heading h1,
+.heading h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 120px;
+    color: #fff;
+}
+
+.heading:first-child {
+    background: url(../img/aerial.jpg);
+    background-size: cover;
+}
+
+.heading_2 {
+    background: url(../img/photography.jpg);
+    background-size: cover;
+}
+
+.imgBx img {
+    width: 50vw;
+}
+
+section {
+    height: auto;
+    display: flex;
+}
+
+section .imgBx {
+    position: sticky;
+    top: 0;
+    min-width: 50%;
+    background: #000;
+    height: 100vh;
+}
+
+section .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .storyBox {
+    padding: 60px;
+}
+
+section .storyBox h2 {
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 60px;
+}
+
+section .storyBox p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    text-align: justify;
+}
