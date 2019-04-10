@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#myslide {
+    width: 1280px;
+    height: 960px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+#one,
+#two {
+    width: 1280px;
+    height: 960px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all ease 200ms;
+}
+
+
+
+#one {
+    background: yellow;
+}
+
+#two {
+    background: blue;
+}
