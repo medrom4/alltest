@@ -1,5 +1,244 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat";
+	background-color: #000;
+}
+
+.post-img img {
+	width: 98vw;
+	height: auto;
+	transform: scale(-1, 1)
+}
+
+.post-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#basicExampleNav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.mr-auto,
+.mx-auto {
+	margin-left: auto !important;
+}
+
+.fixed-top {
+	background-color: rgba(34, 34, 34, 0.502) !important;
+}
+
+div .navbar-brand a {
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bolder;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+div .navbar-brand a span {
+	color: rgb( 32, 180, 94);
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.lender {
+	top: 15%;
+	position: absolute;
+	color: #fff;
+	padding-left: 15px !important;
+}
+
+.lender p {
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 2.0;
+	text-shadow: 0px 2px 2px rgb( 0, 0, 0);
+	margin: 0 !important;
+	font-weight: 600;
+}
+
+.lender p img {
+	margin-right: 10px;
+}
+
+.h1Simple {
+	max-width: 550px;
+}
+
+.h1Simple h1 {
+	text-transform: uppercase;
+	font-size: 2.6em !important;
+	margin-top: 20%;
+}
+
+.startNow {
+	border-style: solid;
+	border-color: rgb( 32, 180, 94);
+	border-width: 3px;
+	max-width: 560px;
+}
+
+.startNow p {
+	font-size: 27px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.481;
+	text-align: left;
+	text-align: center;
+}
+
+.startNow p span {
+	color: rgb( 32, 180, 94);
+}
+
+.formAll {
+	height: 145px;
+	background-color: rgb( 65, 62, 191);
+	box-shadow: -20px 0px 40px 0px rgb( 0, 0, 0);
+	top: -10px;
+	margin: 0 !important;
+	padding: 0 3%;
+}
+
+.yourName,
+.yourEmail,
+.zip,
+.sum {
+	max-width: 300px !important;
+	height: 145px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 3.333;
+	padding: 20px 0;
+}
+
+.yourName p,
+.yourEmail p,
+.zip p,
+.sum p {
+	margin: 0;
+	margin-left: 20px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.yourName input,
+.yourEmail input,
+.zip input,
+.sum select {
+	height: 44px;
+	max-width: 179px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 16px;
+	color: rgb( 139, 139, 139);
+	line-height: 2.5;
+	padding-left: 15px;
+	box-shadow: 3.064px 2.571px 29px 0px rgb( 0, 0, 0);
+}
+
+.yourEmail input {
+	min-width: 278px;
+}
+
+.yourEmail {}
+
+.sum select {
+	background-color: rgb( 32, 180, 94);
+	box-shadow: 3.064px 2.571px 29px 0px rgb( 0, 0, 0);
+	width: 179px;
+	color: #fff;
+	border-color: rgb( 32, 180, 94);
+	font-weight: 600;
+}
+
+.submitting {
+	height: 145px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #252376;
+	width: 100%;
+	position: absolute;
+	right: 0;
+}
+
+.submitting input {
+	border-radius: 15px;
+	border: 0px;
+	background-image: linear-gradient( 114deg, rgb(8, 233, 177) 0%, rgb(55, 187, 61) 100%);
+	box-shadow: 5.362px 4.5px 29px 0px rgb( 0, 0, 0);
+	width: 260px;
+	height: 75px;
+	z-index: 37;
+	text-transform: uppercase;
+	color: rgb( 255, 255, 255);
+	font-size: 18px;
+	font-weight: 800;	
+}
+
+.submitting div {
+	padding-top: 35px;
+	color: #fff;
+}
+
+.container-fluid {
+	padding-right: -15px !important;
+	padding-left: -15px !important;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+
+}
+
+div .fl10 {
+	top: 670px;
+	max-width: 100% !important;
+	position: absolute;
+}
+
+.submitting div {
+	text-align: center;
+	margin: auto 0;
+}
+
+.submitting div p {
+	line-height: 1.889;
+	font-size: 8.1px;
+	margin: auto 0;
+	padding: 5px 10px
+}
+
+.container {
+	padding: 0;
+}
 
 
-.mr-auto, .mx-auto {
-    margin-left: auto!important;
+
+@media (min-width: 1200px) {
+	.post-img img {
+		max-width: 1200px;
+	}
+
+	.post-img {
+		text-align: right;
+	}
+
+	.fl10 {
+		padding-right: -15px !important;
+		padding-left: -15px !important;
+	}
+
 }
