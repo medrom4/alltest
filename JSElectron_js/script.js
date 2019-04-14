@@ -14,11 +14,21 @@ function createWindow() {
         icon: __dirname + "/img/icon.png"
     });
 
-    win.loadUrl(url.format({
+    win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
-        protocol: 'file',
+        protocol: 'file:',
         slashes: true
     }));
 
     win.webContents.openDevTools();
+
+    win.on('closed', () => {
+        win = null;
+    });
 }
+
+app.on('ready', createWindow);
+
+app.on('window-all-closed', () => {
+    app.quit();
+});

@@ -1,19 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site Grid</title>
+    <title>ELECTRONN</title>
     <link rel="stylesheet" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    
+    <h1>Конвертер температуры</h1>
+    <div class="form-group col-md-3">
+        <label for="usr">Цельсии:</label>
+        <input type="text" class="form-control" id="celcius" onkeyup="celciusToFahrenheit()">
+    </div>
+
+    <div class="form-group col-md-3">
+        <label for="pwd">Фаренгейты:</label>
+        <input type="text" class="form-control" id="fahrenheit" onkeyup="fahrenheitToCelcius()">
+    </div>
+
+
+    <script>
+        require('./render.js');
+
+        function celciusToFahrenheit() {
+            let celcius = document.getElementById('celcius').value;
+            let fahrenheit = (celcius * 9 / 5) + 32;
+            document.getElementById('fahrenheit').value = fahrenheit;
+        }
+
+        function fahrenheitToCelcius() {
+            let fahrenheit = document.getElementById('fahrenheit').value;
+            let celcius = (fahrenheit - 32) * 5 / 9
+            document.getElementById('celcius').value = celcius;
+        }
+
+    </script>
+
+
+    <script>
+        require('./render.js');
+
+    </script>
 
     <script src="script_my/script.js"></script>
 </body>
