@@ -1,0 +1,14 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "medrom4",
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^4.1.4"
+    }
+}
