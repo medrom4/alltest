@@ -2,20 +2,54 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FormaSMTP</title>
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FormaSMTP</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	
+	<!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	
 
 </head>
 
 <body>
 
-    
+	<div class="container">
 
-    <script src="script_my/script.js"></script>
+		<div class="row">
+			<div class="col-sm-4">
+				<form action="mail.php" method="POST">
+					<legend>Заголовок формы</legend>
+
+					<div class="form-group">
+						<label for="">Введите ваше имя</label>
+						<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+					</div>
+
+					<div class="form-group">
+						<label for="">Введите номер телефона</label>
+						<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+					</div>
+
+					<div class="form-group">
+						<label for="">Введите email</label>
+						<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Отправить форму</button>
+				</form>
+			</div>
+			<!-- .col-sm-4 -->
+		</div>
+		<!-- .row -->
+
+	</div>
+	<!-- /.container -->
+
+	<script src="script_my/script.js"></script>
 </body>
 
 </html>
