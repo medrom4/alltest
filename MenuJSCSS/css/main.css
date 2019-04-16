@@ -85,6 +85,10 @@ c-hamburger:focus {
     z-index: 999;
 }
 
+body {
+    transition: all ease 0.5s;
+}
+
 .container {
     width: 80px;
     min-width: 1000px;
