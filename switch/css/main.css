@@ -49,3 +49,31 @@ body {
     border-bottom: 0.01em solid #ececec;
     transition: 0.3s;
 }
+
+.checkbox .inner .toggle:before {
+    content: 'OFF';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: linear-gradient(0deg, #e4e4e4, #ccc);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 28px;
+    color: #a9a9a9;
+}
+
+.checkbox .inner.active .toggle:before {
+    content: 'ON';
+    color: #00d22d;
+}
+
+.checkbox .inner.active .toggle {
+    left: 47px;
+}
+
+.checkbox .inner.active {
+    background: linear-gradient(0deg, #00d22d, #158a00);
+}
