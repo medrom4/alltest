@@ -1,0 +1,24 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #34404b;
+    background-color: darkgray;
+}
+
+body::-webkit-scrollbar {
+    width: 25px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: firebrick;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*    background-color: #34404b;*/
+    background: linear-gradient(to top, #34404b, darkgray);
+    background-size: contain;
+    border-radius: 4px;
+
+}
