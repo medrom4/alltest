@@ -1,3 +1,10 @@
+body {
+  background: #FFF;
+  filter: invert(40%) hue-rotate(360deg);
+  mix-blend-mode: color-dodge;
+  color: lightsalmon;
+}
+
 .img-wrapper {
   width: 400px;
   height: 400px;
