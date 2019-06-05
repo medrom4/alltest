@@ -1,0 +1,9 @@
+{
+     "editor.tabSize": 2,
+     "files.autoSave": "onWindowChange",
+     "editor.fontSize": 12,
+    "workbench.activityBar.visible": false,
+    "editor.detectIndentation": false,
+    "editor.glyphMargin": false,
+    "editor.smoothScrolling": true
+}
